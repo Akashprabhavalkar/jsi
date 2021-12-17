@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array iteration method</title>
+</head>
+<body>
+    <script>
+        // forEach(calls a function individually)
+        let nos = [40,20,30,50];
+        console.log(nos.toString());
+        // nos.forEach(square);
+        // console.log(nos.toString());
+        // function square(value, index,array)
+        // {
+        //    array[index] = value*value;
+        // }
+
+        // array.map(creats new arrayn without changing original array)
+        let squares = nos.map(square);
+         console.log(nos.toString());
+         console.log(squares.toString());
+         function square (value,index, array);
+         {
+             return value * value;
+         } 
+    </script>
+</body>
+</html>

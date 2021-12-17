@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let no=71;
+        // while(no<91)
+        // {
+        //     document.write(no+"<br>");
+        //     no++;
+        // }
+        // let no=85;
+        // while(no>76)
+        // {
+        //     document.write(no+"<br>");
+        //     no--;
+        // }
+    //     function display() 
+    //     {
+    //         let no =parseInt( document.getElementById("fact").value);
+    //         let result = 1;
+        
+    //     // let no=10;
+    //     // let result=1;
+    //     while(no>0)
+    //     {
+    //         result = result*no;
+    //         no--;
+    //     }
+    //     // document.write(result+"<br>");
+    //     document.getElementById("result").innerHTML=result;
+    // }
+
+        function display() 
+        {
+            let no =parseInt( document.getElementById("fact").value);
+            let rem = 1;
+            let result = 1;
+        
+        // let no=10;
+        // let result=1;
+        while(no>0)
+        {
+            res = parseInt(no)%10;
+            document.write(res+"<br>");
+            result = parseInt(result)*parseInt(res);
+            no = parseInt(no)/10;
+        }
+        document.write("result"+result+"<br>");
+    }
+    </script>
+</head>
+<body>
+    factorial <input type="text" id="fact">
+    <button onclick="display()">click</button>
+    <div id="result"></div>
+
+</body>

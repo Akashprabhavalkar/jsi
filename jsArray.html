@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let m = [10,20,30];
+        document.write(m);
+        document.write("<br>"); 
+        document.write(m[0]);
+        document.write("<br>");
+
+        let m1 = [];
+         m1[0] = 45;
+         m1[1] = 60;
+         document.write(m1);
+         document.write("<br>");
+         document.write(m1[0]);
+         document.write("<br>");
+
+         let m3 = new Array(10,20,30);
+         document.write(m3);
+         document.write("<br>");
+
+        //  changing an array element
+        let BRANCH = ["mech","civil","cse"];
+        BRANCH[1]= "electronics";
+        document.write(BRANCH);
+        document.write("<br>");
+        document.write(BRANCH[2]);
+        document.write("<br>");
+
+      //  looping array element
+    //   let cars = ["honda","tata","bmw"];
+    //   document.write(cars.length);
+    //   document.write("<br>");
+    //   cars = cars.sort();
+    //   document.write(cars);
+
+    //   let clength = cars.length;
+    //   let text= "<ul>";
+    //     for (let i=0; i<clength; i++)
+    //     {
+    //         text+="<li>"+cars[i]+ "<li>";
+    //     }
+    //     text+="<ul>";
+    //     document.write(text);
+
+    // to string,pop(remove last element),push(add element at end),shift(remove first element),unshift(adds element at beginning),concat(adds two strings)
+    let cars = ["honda","tata","bmw"];
+    cars1 = ["jeep","nissan"];
+    cars.pop();
+    cars.push("hyundai");
+    cars.shift();
+    cars.unshift("volvo");
+    cars = cars.concat(cars1);
+    document.write(cars.toString());
+
+ </script>
+</body>
+</html>

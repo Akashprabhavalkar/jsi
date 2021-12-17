@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="sub1" placeholder="physics">
+    <input type="text" id="sub2" placeholder="chemistry">
+    <input type="text" id="sub3" placeholder="maths">
+    <button onclick="display()">show</button>
+    <p id="total">total</p>
+    <p id="percentage">percentage</p>
+    <p id="grade">grade</p>
+     <script>
+         function display()
+        //  {
+        //  {
+        //      let num1 = document.getElementById("num").value;
+        //      let result = num1/75;
+        //      document.getElementById("result").innerHTML = result
+
+        //  }
+        // let num1 = document.getElementById("num").value;
+        // let result = 3.14*num1*num1;
+        // document.getElementById("result").innerHTML= result
+        //  }
+
+        {
+          let num1 = document.getElementById("sub1").value;
+          let num2 = document.getElementById("sub2").value;
+          let num3 = document.getElementById("sub3").value;
+          let total = parseInt(num1)+parseInt(num2)+parseInt(num3);
+          document.getElementById("total").innerHTML= total;
+          let percentage =total/3;
+          let grade;
+          document.getElementById("percentage").innerHTML=percentage+"%";
+       
+         if(percentage<40)
+         {
+          grade = "fail";
+         }
+         else if (percentage<60){
+          grade = "B grade";
+         }
+         else if(percentage<80){
+          grade= "A grade";
+         }
+         else 
+         {
+          grade ="distinction";
+         }
+         document.getElementById("grade").innerHTML=grade;
+        } 
+       
+      </script>
+
+     <!-- <script>
+    //    let a =50;
+    //    let b = 30
+    //    let c = a+b;
+    //    let d = a*b;
+    //    document.writeln(c +"<br/>");
+    //    document.writeln(d +"<br/>");
+    //    if (a<b){
+    //      document.writeln("a is smaller");
+    //    }
+    //    else {
+    //      document.writeln("b is smaller <br>");
+    //    }
+    //        var x = add(50,60);
+    //        function add(y,z){
+    //          var x =y+z;
+    //          return x;
+    //        }
+    //        document.writeln("addition is :"+ x +"<br>");
+    //        var person = {
+    //          name: "akash",
+    //          age: "23",
+    //          gender:"male"
+    //        }
+    //        document.writeln(person.name +"<br>");
+    //   </script>
+    //   <div id="div">hello</div>
+    //   <button onclick="clickme()">click me </button>
+    //   <script>
+    //   function clickme(){
+    //     let div = document.getElementById("div");
+    //     div.innerHTML = "welcome"
+    //   }
+    //      </script> -->
+      
+</body>
+</html>
